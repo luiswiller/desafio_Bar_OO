@@ -3,21 +3,21 @@ package util;
 public class Bill {
 
 	// Atributos da classe
-	public static char gender;
-	public static int beer;
-	public static int barbecue;
-	public static int softDrink;
+	public char gender;
+	public int beer;
+	public int barbecue;
+	public int softDrink;
 
 	// Métodos da classe
 	public static double cover() {
 		return 4.00;
 	}
 
-	public static double feeding() {
+	public double feeding() {
 		return (beer * 5.00) + (barbecue * 7.00) + (softDrink * 3.00);
 	}
 
-	public static double ticket() {
+	public double ticket() {
 		double ticket = 0.0;
 		
 		if (gender == 'M' || gender == 'm') {
@@ -31,7 +31,7 @@ public class Bill {
 
 	}
 	 
-	public static double total() {
+	public double total() {
 		double bill = 0.0;
 		
 		if (feeding() < 30.0) {
