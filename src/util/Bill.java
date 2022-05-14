@@ -4,6 +4,7 @@ public class Bill {
 
 	// Atributos da classe
 	public char gender;
+	public int age;
 	public int beer;
 	public int barbecue;
 	public int softDrink;
@@ -14,22 +15,22 @@ public class Bill {
 	}
 
 	public double feeding() {
-		return (beer * 5.00) + (barbecue * 7.00) + (softDrink * 3.00);
+		return (beer * 6.00) + (barbecue * 8.00) + (softDrink * 4.00);
 	}
 
 	public double ticket() {
 		double ticket = 0.0;
 		
 		if (gender == 'M' || gender == 'm') {
-			ticket = 10.00;
+			ticket = 12.00;
 
 		} else if (gender == 'F' || gender == 'f') {
-			ticket = 8.00;
+			ticket = 10.00;
 
 		}
 		return ticket;
 
-	}
+	}	
 	 
 	public double total() {
 		double bill = 0.0;

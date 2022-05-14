@@ -15,7 +15,7 @@ public class Program {
 		Bill bill = new Bill();
 
 		System.out.print("Sexo: ");
-		bill.gender = sc.nextLine().charAt(0);
+		bill.gender = sc.nextLine().charAt(0);		
 		System.out.print("Quantidade de cervejas: ");
 		bill.beer = sc.nextInt();
 		System.out.print("Quantidade de refrigerantes: ");
